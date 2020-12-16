@@ -19,7 +19,7 @@
     <input v-model="numero_habitacion" id="numero_habitacion" />
     <label for="precio" type="numeric">Valor</label>
     <input v-model="precio" id="precio" />
-    <button v-on:click="agregarOrden">Agregar Orden</button>
+    <button v-on:click="agregarOrden">Agregar Reserva</button>
     <p>la reserva con id {{ id }} fue recibida</p>
   </div>
 </template>
