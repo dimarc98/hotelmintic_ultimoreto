@@ -20,7 +20,7 @@
     <label for="precio" type="numeric">Valor</label>
     <input v-model="precio" id="precio" />
     <button v-on:click="agregarOrden">Agregar Reserva</button>
-    <p>la reserva con id {{ id }} fue recibida</p>
+    <p>la reserva a nombre de {{ quien_reserva }} fue recibida</p>
   </div>
 </template>
 
@@ -58,7 +58,7 @@ export default {
         precio: this.precio
       };
       axios
-        .post("https://hotelmintic.herokuapp.com/reserva/crear/", datosJSON)
+        .post("https://hotelmintic.herokuapp.com/reserva/crear/dataÑ", datosJSON)
         .then(respuesta => {
           alert(respuesta.data.mensaje);
         })
