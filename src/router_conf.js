@@ -14,6 +14,11 @@ const router = new VueRouter({
       name: "verReservas",
       path: "/verReservas",
       component: VerReservas
+    },
+    {
+      name: "borrarReservas",
+      path: "/borrarReservas",
+      component: EliminarReservas
     }
   ]
 });
