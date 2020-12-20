@@ -9,16 +9,16 @@
     <input v-model="fecha_entrada" id="fecha_entrada" type="date" />
     <label for="fecha_salida">Fecha de salida</label>
     <input v-model="fecha_salida" id="fecha_salida" type="date" />
-    <label for="numero_noches" type="numeric">Numero de noches</label>
-    <input v-model="numero_noches" id="numero_noches" />
+    <label for="numero_noches" >Numero de noches</label>
+    <input v-model="numero_noches" id="numero_noches" type="numeric"/>
     <label for="tipo_habitacion">Tipo habitacion</label>
     <input v-model="tipo_habitacion" id="tipo_habitacion" />
-    <label for="numero_personas" type="numeric">Numero de personas</label>
-    <input v-model="numero_personas" id="numero_personas" />
-    <label for="numero_habitacion" type="numeric">Numero de habitacion</label>
-    <input v-model="numero_habitacion" id="numero_habitacion" />
-    <label for="precio" type="numeric">Valor</label>
-    <input v-model="precio" id="precio" />
+    <label for="numero_personas" >Numero de personas</label>
+    <input v-model="numero_personas" id="numero_personas" type="numeric"/>
+    <label for="numero_habitacion" >Numero de habitacion</label>
+    <input v-model="numero_habitacion" id="numero_habitacion" type="numeric" />
+    <label for="precio" >Valor</label>
+    <input v-model="precio" id="precio" type="numeric"/>
     <button v-on:click="agregarOrden">Agregar Reserva</button>
     <p>la reserva a nombre de {{ quien_reserva }} fue recibida</p>
   </div>
@@ -58,7 +58,7 @@ export default {
         precio: this.precio
       };
       axios
-        .post("https://hotelmintic.herokuapp.com/reserva/crear/dataÑ", datosJSON)
+        .post("https://hotelmintic.herokuapp.com/reserva/crear/data", datosJSON)
         .then(respuesta => {
           alert(respuesta.data.mensaje);
         })
