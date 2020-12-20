@@ -20,6 +20,7 @@
         <td>{{ reserve.fecha_salida }}</td>
         <td>{{ reserve.numero_noches }}</td>
         <td>{{ reserve.tipo_habitacion }}</td>
+        <td>{{ reserve.numero_habitacion }}</td>
         <td>{{ reserve.numero_personas }}</td>
         <td>{{ reserve.precio }}</td>
       </tr>

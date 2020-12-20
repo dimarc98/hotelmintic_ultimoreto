@@ -20,7 +20,7 @@
     <label for="precio" >Valor</label>
     <input v-model="precio" id="precio" type="numeric"/>
     <button v-on:click="BorrarReserva">Borrar Reserva</button>
-    <p>la reserva a nombre de {{ quien_reserva }} fue recibida</p>
+    <p>la reserva con id {{ id }} sera eliminada</p>
   </div>
 </template>
 
@@ -58,7 +58,7 @@ export default {
         precio: this.precio
       };
       axios
-        .post("https://hotelmintic.herokuapp.com/reserva/borrar/", datosJSON)
+        .delete("https://hotelmintic.herokuapp.com/reserva/borrar/", datosJSON)
         .then(respuesta => {
           alert(respuesta.data.mensaje);
         })

@@ -16,7 +16,7 @@
 <script>
 import AgregarReserva from "./components/AgregarReserva";
 import VerReservas from "./components/VerReservas";
-import EliminarReserva from "./components/EliminarReserva"
+import EliminarReserva from "./components/EliminarReserva";
   export default {
     name: 'App',
     components: { AgregarReserva, VerReservas, EliminarReserva},
