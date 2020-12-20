@@ -58,7 +58,7 @@ export default {
         precio: this.precio
       };
       axios
-        .delete("https://hotelmintic.herokuapp.com/reserva/borrar/", datosJSON)
+        .delete('https://hotelmintic.herokuapp.com/reserva/borrar/'+ datosJSON)
         .then(respuesta => {
           alert(respuesta.data.mensaje);
         })
