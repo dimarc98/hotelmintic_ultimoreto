@@ -1,6 +1,7 @@
 import VueRouter from "vue-router";
 import AgregarReserva from "./components/AgregarReserva";
 import VerReservas from "./components/VerReservas";
+import EliminarReservas from "./components/EliminarReservas";
 
 const router = new VueRouter({
   //mode: "history",
