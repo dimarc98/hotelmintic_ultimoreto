@@ -67,7 +67,7 @@ export default {
       };
       
       axios
-        .post("https://hotelmintic.herokuapp.com/reserva/crear/", datosJSON)
+        .post("https://hotelmintic-ultimoreto.herokuapp.com/reserva/crear/", datosJSON)
         .then(respuesta => {
           alert(respuesta.data.mensaje);
         })
