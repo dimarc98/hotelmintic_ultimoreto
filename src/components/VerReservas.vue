@@ -39,7 +39,7 @@ export default {
   },
   beforeCreate: function() {
     axios
-      .get("https://hotelmintic-ultimoreto.herokuapp.com/#/verReservas")
+      .get("https://hotelmintic-ultimoreto.herokuapp.com/verReservas")
       .then(respuesta => {
         this.reservas = respuesta.data;
       })

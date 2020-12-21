@@ -15,3 +15,5 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+origin =["https://hotelmintic-ultimoreto.herokuapp.com"]
